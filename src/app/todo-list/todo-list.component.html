@@ -1,0 +1,17 @@
+<table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Description</th>
+        <th scope="col">Status</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr app-todo *ngFor="let todo of todos; index as i" [name] = "todo.name" [description]="todo.description" [status]="todo.status" >
+          <th scope="row">{{ i + 1 }}</th>
+          <!-- <app-todo  [name] = "todo.name" [description]="todo.description" [status]="todo.status"> -->
+          <!-- </app-todo> -->
+        </tr>
+    </tbody>
+</table>
