@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
-import { Todo } from './todo';
+import { Todos } from './todos';
+import { TodoComponent } from './todo/todo.component';
 
 @Injectable({
   providedIn: 'root'
@@ -7,7 +8,7 @@ import { Todo } from './todo';
 export class TodoDataService {
 
   lastid : number = 0;
-  todos : Todo[] = [];
+  todos : TodoComponent[] = [];
   
   constructor() { }
 }
